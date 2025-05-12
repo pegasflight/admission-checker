@@ -12,8 +12,8 @@ st.markdown(
 # Dropdowns and inputs
 bac_year = st.selectbox("Year of BAC", options=list(range(2005, 2025)))
 high_school_major = st.selectbox("High School Major", options=["M", "MT", "S", "ECO", "LET"])
-bac_average = st.number_input("BAC General Average (/20)", min_value=0.0, max_value=20.0, step=0.01, format="%.2f")
-math_grade = st.number_input("Math Grade (/20)", min_value=0.0, max_value=20.0, step=0.01, format="%.2f")
+bac_average = st.sidebar.slider("BAC General Average (/20)", 0.0, 20.0, 12.0, 0.1)
+math_grade = st.sidebar.slider("Math Grade (/20)", 0.0, 20.0, 12.0, 0.1)
 faculty_choice = st.selectbox("Faculty to Apply To", options=["MI", "SEGC", "SHS", "DSP"])
 
 decision = ""
