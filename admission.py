@@ -48,10 +48,11 @@ else:
                     decision = "ℹ️ Suggested for Preparatory Cycle"
         else:
             decision = "❌ Rejected - Major not accepted for SEGC"
-
+            st.write(f"📊 Weighted Average: Not Concerned! ")
     elif faculty_choice in ["SHS", "DSP"]:
         decision = "✅ Accepted"
-st.write(f"📊 Weighted Average: Not Concerned! ")
+        st.write(f"📊 Weighted Average: Not Concerned! ")
+
 # Display final decision
 if decision:
     st.subheader("📝 Admission Decision")
