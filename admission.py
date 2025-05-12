@@ -26,7 +26,7 @@ else:
     if faculty_choice == "MI":
         if high_school_major in ["M", "MT", "S"]:
             weighted_average = round(((bac_average * 2) + math_grade) / 3, 2)
-            st.write(f"📊 Weighted Average (MI): **{weighted_average}**")
+            st.write(f"📊 Weighted Average: **{weighted_average}**")
             if weighted_average >= 12:
                 decision = "✅ Accepted"
             else:
@@ -51,7 +51,7 @@ else:
 
     elif faculty_choice in ["SHS", "DSP"]:
         decision = "✅ Accepted"
-
+st.write(f"📊 Weighted Average: Not Concerned! ")
 # Display final decision
 if decision:
     st.subheader("📝 Admission Decision")
