@@ -1,7 +1,14 @@
 import streamlit as st
 
-st.title("🎓 University Admission Eligibility Checker")
-
+st.markdown(
+    """
+    <div style="text-align: center;">
+        <img src="https://raw.githubusercontent.com/pegasflight/student-predictor/refs/heads/main/his.png" alt="University Logo" width="150"/>
+        <h1>HIS University Admission Eligibility Checker</h1>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 # Dropdowns and inputs
 bac_year = st.selectbox("Year of BAC", options=list(range(2005, 2025)))
 high_school_major = st.selectbox("High School Major", options=["M", "MT", "S", "ECO", "LET"])
@@ -13,7 +20,7 @@ decision = ""
 weighted_average = None
 
 # Logic
-if bac_year <= 2005:
+if bac_year < 2005:
     decision = "❌ Rejected - BAC year too old"
 else:
     if faculty_choice == "MI":
