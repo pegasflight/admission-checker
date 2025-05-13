@@ -4,7 +4,7 @@ st.markdown(
     """
     <div style="text-align: center;">
         <img src="https://raw.githubusercontent.com/pegasflight/student-predictor/refs/heads/main/his.png" alt="University Logo" width="150"/>
-        <h1>HIS University Admission Eligibiiility Checker</h1>
+        <h1>HIS University Admission Eligibility Checker</h1>
     </div>
     """,
     unsafe_allow_html=True
