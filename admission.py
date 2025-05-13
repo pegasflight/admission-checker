@@ -10,7 +10,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 # Dropdowns and inputs
-bac_year = st.selectbox("Year of BAC", options=list(range(2005, 2025)))
+bac_year = st.selectbox("Year of BAC", options=list(range(2005, 2026)))
 high_school_major = st.selectbox("High School Major", options=["M", "MT", "S", "ECO", "LET"])
 bac_average = st.slider("BAC General Average (/20)", 0.0, 20.0, 12.0, 0.1)
 math_grade = st.slider("BAC Math Grade (/20)", 0.0, 20.0, 12.0, 0.1)
